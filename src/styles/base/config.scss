@@ -1,0 +1,74 @@
+// colors
+
+// Text
+
+$black: #000000;
+$white: #fff;
+$firstTextColor: #d7e0ff;
+
+// Background
+
+$BgColor: #1E213F;
+$BgRedColor: #f87070;
+$BgBlueColor: #70f3f8;
+$BgPinkColor: #d881f8;
+$BgGrayColor: #d7e0ff;
+$BgBlackColor: #161932;
+$BgBlackWhiteColor: #1e213f;
+$BgBeigeColor: #eff1fa;
+
+// PX
+
+// Mixin
+
+@mixin trsansition {
+	transition: all 0.5s ease-in-out;
+}
+
+@mixin zindex {
+	position: relative;
+	z-index: 99;
+}
+
+@mixin flex($justify, $center, $center1) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $center;
+	text-align: $center1;
+}
+
+@mixin shadow {
+}
+
+@mixin absolute {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@mixin button(
+	$background,
+	$height,
+	$weight,
+	$latitude,
+	$line-height,
+	$backgroundHover,
+	$colorHover,
+	$radius
+) {
+	position: relative;
+	background: $background;
+	line-height: $line-height;
+	padding: $height $latitude;
+	color: $white;
+	font-size: 18px;
+	font-weight: $weight;
+	border-radius: $radius;
+	@include flex(center, center, center);
+	@include trsansition;
+
+	&:hover {
+		color: $colorHover;
+		background: $backgroundHover;
+	}
+}

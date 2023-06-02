@@ -1,0 +1,104 @@
+.timer__tab {
+	background-color: $BgBlackColor;
+	display: flex;
+	align-items: center;
+	gap: 22px;
+	margin-bottom: 3em;
+	padding: 8px;
+	border-radius: 25px;
+}
+.timer__tab-button {
+	padding: 15px 25px;
+	color: $firstTextColor;
+	border-radius: 25px;
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		color: $BgBlackWhiteColor;
+		background-color: $BgRedColor;
+	}
+}
+
+.time__timer-wrapper {
+	position: relative;
+	transform: translateY(260px);
+}
+
+.timer__circle {
+	position: absolute;
+}
+.timer__circle-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 410px;
+	height: 410px;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
+	box-shadow: -50px -50px 100px #272c5a, 50px 50px 100px #121530;
+}
+.timer__circle-first {
+	background: $BgBlackColor;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 366px;
+	height: 366px;
+	border-radius: 50%;
+}
+.timer__circle-progressbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-49%, -51%);
+	width: 340px;
+	height: 340px;
+	border-radius: 50%;
+}
+.timer__circle-progressbar svg {
+	position: relative;
+	width: 340px;
+	height: 340px;
+	transform: rotate(270deg);
+	transition: 0.1 all ease-in;
+}
+.timer__circle-bar {
+	width: 100%;
+	height: 100%;
+	fill: transparent;
+	stroke-width: 15px;
+	stroke-dasharray: 975;
+	stroke-dashoffset: 975;
+	stroke-linecap: round;
+	stroke: $BgRedColor;
+	transform: translate(5px, 5px);
+}
+.timer__timer {
+	position: absolute;
+	text-align: center;
+
+	& span {
+		font-size: 100px;
+		line-height: 124px;
+		letter-spacing: -5px;
+	}
+
+	& button {
+		font-family: 'Roboto Slab';
+		font-size: 16px;
+		line-height: 21px;
+		text-align: center;
+		letter-spacing: 15px;
+
+		color: #d7e0ff;
+	}
+}
+
+.timer__settings {
+	transform: translateY(530px);
+}

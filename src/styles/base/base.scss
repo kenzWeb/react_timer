@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// base
+
+@import 'config';
+@import 'fonts';
+@import 'media';
+@import 'reset';
+
+// block
+@import '../block/timer.scss';
+@import '../block/settingsModal.scss';
+
+.container {
+	max-width: 1480px;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #1e213f;
+	color: $firstTextColor;
+	font-family: 'Kumbh Sans';
+	font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $firstTextColor;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 100px;
+	line-height: 120px;
+	letter-spacing: -5px;
+}
+
+.title2 {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 34px;
+}
+
+.title3 {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	color: $BgBlackColor;
+}
+
+.title4 {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.title5 {
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.title6 {
+	font-size: 12px;
+	line-height: 15px;
+	color: $BgBlackWhiteColor;
+	opacity: 0.4;
+}
+
+.selected {
+	background-color: $BgBlackColor;
+	color: $white;
+}
+
+.font-kumbh {
+	font-family: 'Kumbh Sans', sans-serif;
+}
+
+.font-robotoslab {
+	font-family: 'Roboto Slab', serif;
+}
+
+.font-spacemono {
+	font-family: 'Space Mono', monospace;
+}
+
+.color-red {
+	stroke: $BgRedColor;
+
+	&:hover {
+		background-color: $BgRedColor;
+	}
+
+	&:active {
+		background-color: $BgRedColor;
+	}
+}
+.color-blue {
+	stroke: $BgBlueColor;
+
+	&:hover {
+		background-color: $BgBlueColor;
+	}
+
+	&:active {
+		background-color: $BgBlueColor;
+	}
+}
+
+.color-pink {
+	stroke: $BgPinkColor;
+
+	&:hover {
+		background-color: $BgPinkColor;
+	}
+
+	&:active {
+		background-color: $BgPinkColor;
+	}
+}
